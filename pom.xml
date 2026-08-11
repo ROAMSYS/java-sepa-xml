@@ -41,14 +41,14 @@
         <repository>
             <name>Roamsys Repository</name>
             <id>roamsys-repository</id>
-            <url>scp://repo.roamsys.com/srv/maven/repository</url>
+            <url>scpexe://repo.roamsys.com/srv/maven/repository</url>
         </repository>
     </repositories>
     <distributionManagement>
         <repository>
             <id>roamsys-repository</id>
             <name>Roamsys Repository</name>
-            <url>scp://repo.roamsys.com/srv/maven/repository</url>
+            <url>scpexe://repo.roamsys.com/srv/maven/repository</url>
         </repository>
     </distributionManagement>
 
@@ -180,8 +180,8 @@
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
-                <version>3.3.3</version>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>3.5.3</version>
             </extension>
         </extensions>
     </build>
